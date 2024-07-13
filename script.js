@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyDpz1YebvGDgbYDOafhSkQUXyPbNwDcDpA",
@@ -43,43 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('signup-email').value;
         const password = document.getElementById('signup-password').value;
         auth.createUserWithEmailAndPassword(email, password).catch(error => alert(error.message));
-    })
-=======
-// Firebase configuration
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-const db = firebase.firestore();
-
-document.addEventListener('DOMContentLoaded', function() {
-    const calendarEl = document.getElementById('calendar');
-    const calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        editable: true,
-        selectable: true,
-        events: []
-    });
-    calendar.render();
-
-    // Authentication
-    const loginForm = document.getElementById('login-form');
-    const logoutBtn = document.getElementById('logout-btn');
-    const authSection = document.getElementById('auth-section');
-
-    loginForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
-        auth.signInWithEmailAndPassword(email, password).catch(error => alert(error.message));
     });
 
     logoutBtn.addEventListener('click', function() {
@@ -145,4 +107,3 @@ function notifyUser(message) {
         });
     }
 }
->>>>>>> 1936f471efaf88a996aa9edef23aa6dc014f020c

@@ -1,5 +1,6 @@
 body {
     background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
 
 h1 {
@@ -7,25 +8,34 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
 #calendar {
     width: 100%;
+    margin-top: 2rem;
 }
 
 #auth-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#logout-btn {
-    display: none;
+    margin-bottom: 2rem;
 }
 
 form {
-    width: 100%;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 2rem;
 }
 
 input,
 button {
     width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.75rem;
 }
